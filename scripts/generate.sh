@@ -132,3 +132,8 @@ RUN apt-get -y install libgconf-2-4 \
   && mv chromedriver /usr/local/bin/chromedriver \
   && chmod +x /usr/local/bin/chromedriver"
 fi
+
+# install cypress dependecies
+echo "RUN apt-get -y install libgtk2.0-0 libnotify-dev libnss3 libxss1"
+echo "RUN npm i -g yarn"
+echo "RUN yarn global add @adonisjs/cli"
